@@ -1,6 +1,6 @@
 require 'eye'
-require "eye/userenv/version"
-require 'eye/userenv/application_opts'
+require 'eye-userenv/version'
+require 'eye-userenv/extend/application_opts'
 
 module Eye
   module Userenv
