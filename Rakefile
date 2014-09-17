@@ -17,7 +17,7 @@ rule /^version:bump:.*/ do |t|
   end
 
   sh "rake install &&
-      git add #{file} Gemfile.lock &&
+      git add #{file} &&
       git commit -m 'Bump version from #{old_version} to #{new_version}' &&
       git push &&
       rake release"
